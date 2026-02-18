@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Handsworth Wood Quran & Islamic Studies Class</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Nunito", sans-serif;
+                background-color: #f5f5f5;
+                color: #333;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                font-family: "Poppins", sans-serif;
+            }
+
+            .hero {
+                background: linear-gradient(135deg, #1a2a4a 0%, #0d3b6e 100%);
+                color: white;
+                text-align: center;
+                padding: 60px 20px 40px;
+            }
+
+            .hero-location {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                background: rgba(230, 126, 34, 0.25);
+                border: 1px solid rgba(230, 126, 34, 0.5);
+                border-radius: 25px;
+                padding: 6px 16px;
+                font-size: 0.9rem;
+                color: #f0a060;
+                font-weight: 700;
+                margin-bottom: 18px;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+            .hero h2 {
+                font-size: 1.15rem;
+                font-weight: 400;
+                color: #a8c8e8;
+                margin-bottom: 20px;
+            }
+
+            .hero-tagline {
+                font-size: 1rem;
+                color: #cde0f5;
+                max-width: 580px;
+                margin: 0 auto 30px;
+                line-height: 1.6;
+            }
+
+            .hero-badges {
+                display: flex;
+                justify-content: center;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+
+            .badge {
+                background: rgba(255, 255, 255, 0.12);
+                border: 1px solid rgba(255, 255, 255, 0.25);
+                border-radius: 25px;
+                padding: 8px 18px;
+                font-size: 0.88rem;
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .usp-strip-inner {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                background: #e67e22;
+            }
+
+            .usp-item {
+                color: white;
+                padding: 16px 28px;
+                text-align: center;
+                border-right: 1px solid rgba(255, 255, 255, 0.25);
+                flex: 1;
+                min-width: 160px;
+            }
+
+            .usp-item:last-child {
+                border-right: none;
+            }
+            .usp-item .usp-value {
+                font-size: 1.5rem;
+                font-weight: 800;
+                display: block;
+                font-family: "Poppins", sans-serif;
+            }
+            .usp-item .usp-label {
+                font-size: 0.78rem;
+                opacity: 0.88;
+                text-transform: uppercase;
+                letter-spacing: 0.8px;
+            }
+
+            .schedule-banner {
+                background: #1a2a4a;
+                color: white;
+                text-align: center;
+                padding: 18px 20px;
+            }
+
+            .schedule-banner p {
+                font-size: 1.05rem;
+                font-weight: 700;
+            }
+            .schedule-banner span {
+                font-size: 0.88rem;
+                opacity: 0.75;
+                display: block;
+                margin-top: 4px;
+            }
+
+            .container {
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 40px 20px;
+            }
+
+            .section-title {
+                font-size: 1.45rem;
+                font-weight: 700;
+                color: #1a2a4a;
+                margin-bottom: 20px;
+                padding-bottom: 10px;
+                border-bottom: 3px solid #e67e22;
+                display: inline-block;
+            }
+
+            .why-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 20px;
+                margin-top: 20px;
+                margin-bottom: 45px;
+            }
+
+            .why-card {
+                background: white;
+                border-radius: 12px;
+                padding: 28px 24px;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+                border-top: 4px solid #e67e22;
+            }
+
+            .why-card .why-icon {
+                font-size: 2rem;
+                margin-bottom: 12px;
+            }
+            .why-card .highlight-stat {
+                display: inline-block;
+                background: #fff3e0;
+                color: #e67e22;
+                font-weight: 800;
+                font-size: 1.05rem;
+                border-radius: 6px;
+                padding: 2px 10px;
+                margin-bottom: 8px;
+            }
+
+            .why-card h3 {
+                font-size: 1rem;
+                color: #1a2a4a;
+                margin-bottom: 8px;
+            }
+            .why-card p {
+                font-size: 0.9rem;
+                color: #555;
+                line-height: 1.65;
+            }
+
+            .affordability-callout {
+                background: linear-gradient(135deg, #1a2a4a, #0d3b6e);
+                color: white;
+                border-radius: 16px;
+                padding: 35px 30px;
+                margin-bottom: 45px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .aff-item {
+                padding: 15px 10px;
+                border-right: 1px solid rgba(255, 255, 255, 0.15);
+            }
+            .aff-item:last-child {
+                border-right: none;
+            }
+            .aff-value {
+                font-size: 2.4rem;
+                font-weight: 800;
+                color: #f0a060;
+                display: block;
+                line-height: 1.1;
+                font-family: "Poppins", sans-serif;
+            }
+            .aff-label {
+                font-size: 0.82rem;
+                opacity: 0.75;
+                text-transform: uppercase;
+                letter-spacing: 0.8px;
+                margin-top: 6px;
+                display: block;
+            }
+            .aff-sub {
+                font-size: 0.85rem;
+                opacity: 0.65;
+                margin-top: 4px;
+                display: block;
+            }
+
+            .topics-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+                margin-top: 20px;
+                margin-bottom: 45px;
+            }
+
+            .topic-card {
+                background: white;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .topic-icon {
+                font-size: 1.5rem;
+                flex-shrink: 0;
+            }
+            .topic-card h4 {
+                font-size: 0.95rem;
+                color: #1a2a4a;
+                font-weight: 700;
+                margin-bottom: 4px;
+            }
+            .topic-card p {
+                font-size: 0.82rem;
+                color: #666;
+                line-height: 1.5;
+            }
+
+            .faq-section {
+                margin-bottom: 45px;
+            }
+
+            .faq-item {
+                background: white;
+                border-radius: 10px;
+                margin-bottom: 12px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+                overflow: hidden;
+            }
+
+            .faq-question {
+                width: 100%;
+                background: none;
+                border: none;
+                padding: 18px 20px;
+                text-align: left;
+                font-size: 0.97rem;
+                font-weight: 700;
+                font-family: "Nunito", sans-serif;
+                color: #1a2a4a;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: background 0.2s;
+            }
+
+            .faq-question:hover {
+                background: #f0f4f8;
+            }
+            .faq-question .arrow {
+                font-size: 1.1rem;
+                transition: transform 0.3s;
+                color: #e67e22;
+                flex-shrink: 0;
+                margin-left: 10px;
+            }
+            .faq-question.active .arrow {
+                transform: rotate(180deg);
+            }
+
+            .faq-answer {
+                display: none;
+                padding: 0 20px 18px;
+                font-size: 0.92rem;
+                color: #555;
+                line-height: 1.7;
+            }
+
+            .faq-answer.open {
+                display: block;
+            }
+
+            .note-box {
+                background: #fff8e1;
+                border-left: 4px solid #e67e22;
+                border-radius: 0 8px 8px 0;
+                padding: 14px 18px;
+                margin-top: 18px;
+                font-size: 0.88rem;
+                color: #555;
+                line-height: 1.6;
+            }
+
+            .form-section {
+                background: white;
+                border-radius: 16px;
+                padding: 40px 35px;
+                box-shadow: 0 2px 16px rgba(0, 0, 0, 0.09);
+                margin-bottom: 40px;
+            }
+
+            .form-section h2 {
+                font-size: 1.6rem;
+                color: #1a2a4a;
+                margin-bottom: 6px;
+            }
+            .form-section > p {
+                color: #666;
+                font-size: 0.95rem;
+                margin-bottom: 25px;
+                line-height: 1.6;
+            }
+
+            .form-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+            }
+
+            .form-group.full {
+                grid-column: 1 / -1;
+            }
+
+            .form-group label {
+                font-size: 0.88rem;
+                font-weight: 700;
+                color: #1a2a4a;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                padding: 12px 14px;
+                border: 2px solid #e0e8f0;
+                border-radius: 8px;
+                font-size: 0.92rem;
+                font-family: "Nunito", sans-serif;
+                color: #333;
+                transition: border-color 0.2s;
+                background: #fafcff;
+            }
+
+            .form-group input:focus,
+            .form-group select:focus,
+            .form-group textarea:focus {
+                outline: none;
+                border-color: #0d3b6e;
+                background: white;
+            }
+
+            .form-group textarea {
+                resize: vertical;
+                min-height: 110px;
+            }
+
+            .form-submit {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                flex-wrap: wrap;
+            }
+
+            .submit-btn {
+                background: #e67e22;
+                color: white;
+                border: none;
+                padding: 14px 32px;
+                border-radius: 8px;
+                font-size: 1rem;
+                font-weight: 700;
+                font-family: "Nunito", sans-serif;
+                cursor: pointer;
+                transition:
+                    background 0.2s,
+                    transform 0.1s;
+            }
+
+            .submit-btn:hover {
+                background: #cf6d17;
+                transform: translateY(-2px);
+            }
+            .submit-btn:disabled {
+                background: #aaa;
+                cursor: not-allowed;
+                transform: none;
+            }
+
+            .form-note {
+                font-size: 0.82rem;
+                color: #999;
+            }
+
+            .form-success {
+                display: none;
+                background: #e8f5e9;
+                border: 1px solid #a5d6a7;
+                border-radius: 8px;
+                padding: 16px 20px;
+                color: #2e7d32;
+                font-weight: 600;
+                margin-top: 16px;
+            }
+
+            footer {
+                background: #1a2a4a;
+                color: rgba(255, 255, 255, 0.55);
+                text-align: center;
+                padding: 22px 20px;
+                font-size: 0.83rem;
+            }
+
+            footer a {
+                color: rgba(255, 255, 255, 0.75);
+                text-decoration: none;
+            }
+
+            @media (max-width: 700px) {
+                .hero h1 {
+                    font-size: 1.75rem;
+                }
+                .affordability-callout {
+                    grid-template-columns: 1fr;
+                }
+                .aff-item {
+                    border-right: none;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+                    padding: 12px 0;
+                }
+                .aff-item:last-child {
+                    border-bottom: none;
+                }
+                .usp-item {
+                    border-right: none;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                }
+                .usp-item:last-child {
+                    border-bottom: none;
+                }
+                .form-grid {
+                    grid-template-columns: 1fr;
+                }
+                .form-section {
+                    padding: 28px 20px;
+                }
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition:
+                    background-color 0.2s ease,
+                    border-color 0.2s ease,
+                    box-shadow 0.2s ease,
+                    transform 0.2s ease,
+                    opacity 0.2s ease;
+            }
+
+            .badge {
+                cursor: default;
+                transition:
+                    background 0.25s ease,
+                    transform 0.25s ease;
+            }
+            .badge:hover {
+                background: rgba(255, 255, 255, 0.22);
+                transform: translateY(-3px);
+            }
+
+            .usp-item {
+                transition: background 0.25s ease;
+            }
+            .usp-item:hover {
+                background: rgba(255, 255, 255, 0.12);
+            }
+
+            .why-card {
+                transition:
+                    transform 0.25s ease,
+                    box-shadow 0.25s ease;
+            }
+            .why-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 10px 28px rgba(0, 0, 0, 0.13);
+            }
+
+            .topic-card {
+                transition:
+                    transform 0.25s ease,
+                    box-shadow 0.25s ease;
+            }
+            .topic-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 22px rgba(0, 0, 0, 0.11);
+            }
+
+            .faq-item {
+                transition:
+                    box-shadow 0.25s ease,
+                    transform 0.2s ease;
+            }
+            .faq-item:hover {
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+                transform: translateY(-2px);
+            }
+
+            .faq-answer {
+                max-height: 0;
+                overflow: hidden;
+                display: block !important;
+                opacity: 0;
+                transition:
+                    max-height 0.35s ease,
+                    opacity 0.3s ease,
+                    padding 0.3s ease;
+                padding: 0 20px;
+            }
+            .faq-answer.open {
+                max-height: 300px;
+                opacity: 1;
+                padding: 0 20px 18px;
+            }
+
+            .aff-item {
+                transition:
+                    background 0.25s ease,
+                    transform 0.25s ease;
+                border-radius: 10px;
+            }
+            .aff-item:hover {
+                background: rgba(255, 255, 255, 0.07);
+                transform: translateY(-3px);
+            }
+
+            .submit-btn {
+                transition:
+                    background 0.25s ease,
+                    transform 0.2s ease,
+                    box-shadow 0.25s ease;
+            }
+            .submit-btn:hover:not(:disabled) {
+                background: #cf6d17;
+                transform: translateY(-3px);
+                box-shadow: 0 6px 18px rgba(230, 126, 34, 0.4);
+            }
+            .submit-btn:active:not(:disabled) {
+                transform: translateY(0);
+                box-shadow: none;
+            }
+
+            .contact-link {
+                transition:
+                    background 0.25s ease,
+                    transform 0.2s ease,
+                    box-shadow 0.2s ease;
+            }
+            .contact-link:hover {
+                background: #dde8f0;
+                transform: translateY(-3px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                transition:
+                    border-color 0.25s ease,
+                    box-shadow 0.25s ease,
+                    background 0.25s ease;
+            }
+            .form-group input:focus,
+            .form-group select:focus,
+            .form-group textarea:focus {
+                border-color: #0d3b6e;
+                box-shadow: 0 0 0 3px rgba(13, 59, 110, 0.1);
+                background: white;
+            }
+
+            @keyframes fadeUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .hero {
+                animation: fadeUp 0.6s ease both;
+            }
+            .usp-strip-inner {
+                animation: fadeUp 0.6s 0.1s ease both;
+            }
+            .schedule-banner {
+                animation: fadeUp 0.6s 0.2s ease both;
+            }
+            .why-card {
+                animation: fadeUp 0.5s ease both;
+            }
+            .why-card:nth-child(1) {
+                animation-delay: 0.05s;
+            }
+            .why-card:nth-child(2) {
+                animation-delay: 0.1s;
+            }
+            .why-card:nth-child(3) {
+                animation-delay: 0.15s;
+            }
+            .why-card:nth-child(4) {
+                animation-delay: 0.2s;
+            }
+            .why-card:nth-child(5) {
+                animation-delay: 0.25s;
+            }
+            .why-card:nth-child(6) {
+                animation-delay: 0.3s;
+            }
+            .topic-card {
+                animation: fadeUp 0.5s ease both;
+            }
+            .topic-card:nth-child(1) {
+                animation-delay: 0.05s;
+            }
+            .topic-card:nth-child(2) {
+                animation-delay: 0.1s;
+            }
+            .topic-card:nth-child(3) {
+                animation-delay: 0.15s;
+            }
+            .topic-card:nth-child(4) {
+                animation-delay: 0.2s;
+            }
+            .topic-card:nth-child(5) {
+                animation-delay: 0.25s;
+            }
+            .topic-card:nth-child(6) {
+                animation-delay: 0.3s;
+            }
+            html,
+            body {
+                overflow-x: hidden;
+                max-width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="hero">
+            <div class="hero-location">📍 Handsworth Wood, Birmingham B20</div>
+            <h1>Quran & Islamic Studies</h1>
+            <h2>Right Here in Your Community</h2>
+            <p class="hero-tagline">
+                A local, affordable class for children aged 5–11 — kept intentionally small so every child gets the
+                attention they deserve.
+            </p>
+            <div class="hero-badges">
+                <div class="badge">👧 Ages 5–11</div>
+                <div class="badge">👩‍🏫 Experienced Female Teacher</div>
+                <div class="badge">✅ Free Trial Available</div>
+            </div>
+        </section>
+
+        <div class="usp-strip-inner">
+            <div class="usp-item"><span class="usp-value">£3.20</span><span class="usp-label">Per Hour</span></div>
+            <div class="usp-item"><span class="usp-value">6</span><span class="usp-label">Max Group Size</span></div>
+            <div class="usp-item">
+                <span class="usp-value">B20</span><span class="usp-label">Local — Handsworth Wood</span>
+            </div>
+            <div class="usp-item">
+                <span class="usp-value">7+</span><span class="usp-label">Years' Experience</span>
+            </div>
+        </div>
+
+        <div class="schedule-banner">
+            <p>📅 Every Monday & Thursday &nbsp;·&nbsp; ⏰ 5:30 PM – 7:00 PM</p>
+            <span>Held at the teacher's residence in Handsworth Wood — no long commutes</span>
+        </div>
+
+        <div class="container">
+            <section style="margin-bottom: 45px">
+                <h2 class="section-title">Why This Class?</h2>
+                <p style="color: #555; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6">
+                    Compare this to private tutors charging £20–£30/hr, or daily maktab sessions that can cost more per
+                    month — this class is designed to be accessible to every local family.
+                </p>
+
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-icon">🎯</div>
+                        <div class="highlight-stat">Tailored to Each Child</div>
+                        <h3>Your Child's Level, Not the Group's</h3>
+                        <p>
+                            Whether your child is a complete beginner or already reading Quran, lessons are adapted to
+                            their individual ability — so no one is left behind or held back.
+                        </p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">💷</div>
+                        <div class="highlight-stat">£3.20 per hour</div>
+                        <h3>Genuinely Affordable</h3>
+                        <p>
+                            At just £38 per month covering 12 hours of teaching, this is exceptional value — quality
+                            Islamic education that doesn't strain your household budget.
+                        </p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">👥</div>
+                        <div class="highlight-stat">Max 6 Children</div>
+                        <h3>Small Groups, Big Impact</h3>
+                        <p>
+                            Unlike busy maktabs, sessions are capped at 6 children — more individual attention, better
+                            progress, and a calmer environment for your child.
+                        </p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">😊</div>
+                        <div class="highlight-stat">Twice a Week Only</div>
+                        <h3>Not a Burden on Your Child</h3>
+                        <p>
+                            Most classes run daily for 2 hours — exhausting for children already at school all day.
+                            These sessions run Monday and Thursday evenings only.
+                        </p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">👩‍🏫</div>
+                        <div class="highlight-stat">Islamic Theology Qualified</div>
+                        <h3>Taught by Someone Who Truly Cares</h3>
+                        <p>
+                            A qualified female teacher with a background in Islamic Theology and years of hands-on
+                            maktab experience — and as a mother herself, she understands exactly how children learn
+                            best.
+                        </p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">📊</div>
+                        <div class="highlight-stat">Termly Reports</div>
+                        <h3>You'll Always Know How They're Doing</h3>
+                        <p>
+                            Termly written reports, weekly homework and voice recording check-ins mean you're always in
+                            the loop on your child's progress.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section style="margin-bottom: 45px">
+                <h2 class="section-title">Breaking Down the Cost</h2>
+                <div class="affordability-callout">
+                    <div class="aff-item">
+                        <span class="aff-value">£38</span>
+                        <span class="aff-label">Per Month</span>
+                        <span class="aff-sub">Per child, all-inclusive</span>
+                    </div>
+                    <div class="aff-item">
+                        <span class="aff-value">12hrs</span>
+                        <span class="aff-label">Teaching Per Month</span>
+                        <span class="aff-sub">2 sessions/week × 1.5hrs</span>
+                    </div>
+                    <div class="aff-item">
+                        <span class="aff-value">£3.20</span>
+                        <span class="aff-label">Per Hour</span>
+                        <span class="aff-sub">Exceptional local value</span>
+                    </div>
+                </div>
+                <div class="note-box">
+                    💡 <strong>How payment works:</strong> The first month's fee secures your child's place, due by
+                    <strong>15th December 2026</strong>. Only 6 spots per group — first come, first served. Subsequent
+                    payments by bank transfer on the <strong>1st of each month</strong>.
+                </div>
+            </section>
+
+            <section style="margin-bottom: 45px">
+                <h2 class="section-title">What Your Child Will Learn</h2>
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-icon">📖</div>
+                        <div>
+                            <h4>Qaida & Quran</h4>
+                            <p>Foundation reading and recitation tailored to each child's level</p>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">🎵</div>
+                        <div>
+                            <h4>Tajweed</h4>
+                            <p>Rules of correct Quranic pronunciation and recitation</p>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">🤲</div>
+                        <div>
+                            <h4>Surahs & Duas</h4>
+                            <p>Memorisation of key chapters and daily supplications</p>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">🌟</div>
+                        <div>
+                            <h4>Manners & Etiquettes</h4>
+                            <p>Islamic character and adab in everyday life</p>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">📜</div>
+                        <div>
+                            <h4>Stories of the Prophets</h4>
+                            <p>Engaging, age-appropriate stories from Islamic history</p>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">⚖️</div>
+                        <div>
+                            <h4>Basic Fiqh</h4>
+                            <p>Child-friendly Islamic jurisprudence for daily life</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2 class="section-title">Common Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Why only 6 children per group? <span class="arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        Small groups mean the teacher can give real, focused attention to every child — adjusting pace,
+                        catching mistakes early, and making each session feel personal rather than like a classroom.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Why twice a week instead of daily? <span class="arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        Most local Islamic institutes run daily sessions for around 2 hours — exhausting for children
+                        already at school all day. Monday and Thursday sessions give children time to rest and absorb
+                        what they've learned, making it something they look forward to.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Is £38/month truly all-inclusive? <span class="arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes. The £38 monthly fee covers all 12 hours of teaching that month. The only possible extra
+                        cost is a kitab (book) at the start of term — and if your child already has books from a
+                        previous maktab, those can often be used instead.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        My child is a complete beginner — is that okay? <span class="arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        Absolutely. Each child is taught according to their own ability. Beginners start from the
+                        basics, while children with existing knowledge continue progressing. No child is left behind or
+                        made to feel out of place.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        How will I track my child's progress? <span class="arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        You'll receive a termly written report and weekly homework. Children send voice recordings to
+                        the teacher before each session, giving you regular, meaningful insight into how they're getting
+                        on.
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>Enquire or Book a Free Trial</h2>
+                <p>
+                    Fill in the form below and we'll get back to you as soon as possible. Spaces are limited to 6 per
+                    group — don't miss out.
+                </p>
+
+                <form id="enquiryForm" action="https://formspree.io/f/xaqdbwab" method="POST">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="parent_name">Your Name *</label>
+                            <input
+                                type="text"
+                                id="parent_name"
+                                name="parent_name"
+                                placeholder="e.g. Fatima Ahmed"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g. 07700 900000" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. example@email.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="child_age">Child's Age *</label>
+                            <select id="child_age" name="child_age" required>
+                                <option value="" disabled selected>Select age</option>
+                                <option>5 years old</option>
+                                <option>6 years old</option>
+                                <option>7 years old</option>
+                                <option>8 years old</option>
+                                <option>9 years old</option>
+                                <option>10 years old</option>
+                                <option>11 years old</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="enquiry_type">Type of Enquiry *</label>
+                            <select id="enquiry_type" name="enquiry_type" required>
+                                <option value="" disabled selected>Select one</option>
+                                <option>Book a free trial session</option>
+                                <option>Enrol my child</option>
+                                <option>General question</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="child_level">Child's Current Level</label>
+                            <select id="child_level" name="child_level">
+                                <option value="" disabled selected>Select level</option>
+                                <option>Complete beginner</option>
+                                <option>Started Qaida</option>
+                                <option>Reading Quran</option>
+                                <option>Unsure</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <label for="message">Anything else you'd like us to know?</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Any specific goals, questions, or requirements for your child..."
+                            ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="submit-btn" id="submitBtn">Send Enquiry →</button>
+                        <span class="form-note">We typically respond within 24 hours</span>
+                    </div>
+                    <div class="form-success" id="formSuccess">
+                        ✅ Thank you! Your enquiry has been sent. We'll be in touch within 24 hours, in sha Allah.
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <footer>
+            <p>Handsworth Wood Quran & Islamic Studies Class · Birmingham B20</p>
+            <p style="margin-top: 6px">
+                <a href="mailto:quranislamicstudies@gmail.com">quranislamicstudies@gmail.com</a> &nbsp;·&nbsp;
+                <a href="tel:07741461194">07741 461194</a>
+            </p>
+        </footer>
+
+        <script>
+            function toggleFaq(btn) {
+                const answer = btn.nextElementSibling;
+                const isOpen = answer.classList.contains("open");
+                document.querySelectorAll(".faq-answer").forEach((a) => a.classList.remove("open"));
+                document.querySelectorAll(".faq-question").forEach((b) => b.classList.remove("active"));
+                if (!isOpen) {
+                    answer.classList.add("open");
+                    btn.classList.add("active");
+                }
+            }
+
+            document.getElementById("enquiryForm").addEventListener("submit", async function (e) {
+                e.preventDefault();
+                const btn = document.getElementById("submitBtn");
+                const success = document.getElementById("formSuccess");
+                btn.disabled = true;
+                btn.textContent = "Sending...";
+                try {
+                    const res = await fetch(this.action, {
+                        method: "POST",
+                        body: new FormData(this),
+                        headers: { Accept: "application/json" },
+                    });
+                    if (res.ok) {
+                        success.style.display = "block";
+                        this.reset();
+                        btn.textContent = "Sent ✓";
+                    } else {
+                        btn.disabled = false;
+                        btn.textContent = "Send Enquiry →";
+                        alert("Something went wrong. Please try again or contact us directly.");
+                    }
+                } catch {
+                    btn.disabled = false;
+                    btn.textContent = "Send Enquiry →";
+                    alert("Something went wrong. Please try again or contact us directly.");
+                }
+            });
+        </script>
+    </body>
+</html>
